@@ -12,20 +12,26 @@ The purpose of this challenge was to apply machine learning to solve a real-worl
 
 The results for the 6 tests were varied as I went through each one. To describe the results further:
 
-- Naive Random Oversampling:
+- Naive Random Oversampling: Accuracy Score: 0.64  Pre: 0.01    Rec: 0.72
 
-- SMOTE Oversample:
 
-- Undersampling Cluster Centroids:
+- SMOTE Oversample: Accuracy Score: 0.65  Pre: 0.01    Rec: 0.61
 
-- Combination Over/Under SMOTEEN:
 
-- Balanced Random Forest Classifier:
+- Undersampling Cluster Centroids: Accuracy Score: 0.54  Pre: 0.01   Rec: 0.67
 
-- Easy Ensemble Adaboost Classifier:
+
+- Combination Over/Under SMOTEEN: Accuracy Score: 0.64  Pre: 0.01    Rec: 0.72
+
+
+- Balanced Random Forest Classifier: Accuracy Score: 0.69  Pre: 0.88    Rec: 0.38
+
+
+- Easy Ensemble Adaboost Classifier: Accuracy Score: 0.64  Pre: .33    Rec: 0.01
+
 
 
 
 ## Summary
 
-It was very interesting to use the different models with the dataset and see the results. If I had to choose a model as the best choice, I would go with the balanced random forest model as it had the best precision and recall for true positives. SMOTE would be the 2nd choice but to be honest, I would probably need to do a lot more tuning or try other models to make a better informed choice.
+It was very interesting to use the different models with the dataset and see the results. If I had to choose a model as the best choice, I would go with the Naive Random Oversampling model as it had the best recall for predicting high risk accounts. SMOTEEN would be the 2nd choice as it produced similar results but to be honest, I would probably need to do a lot more tuning or try other models to make a better informed choice. I couldn't make a solid recommendation at this point in time based off what I've seen and would like to try more modeling.
